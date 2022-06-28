@@ -6,6 +6,11 @@ pipeline {
                 sh 'python3 gen.py'
             }
         }
+        stage("打印hello"){
+            steps{
+                echo "Hello"
+            }
+        }
     }
     post {
         success {
